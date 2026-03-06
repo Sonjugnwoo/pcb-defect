@@ -25,7 +25,7 @@ absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox
 - Morphology: 노이즈 제거  
 
 현재 한계점  
-매직넘버: threshold=30, area=120 하드코딩  
+매직넘버: threshold=30, area=90 하드코딩  
 회전/크기 변화: 템플릿 매칭 한계  
 배치 처리: 수동 1개씩 처리  
 
