@@ -1,15 +1,15 @@
-PCB 불량 검출 시스템 v1.0
-OpenCV + MFC 기반 템플릿 매칭 프로토타입
+PCB 불량 검출 시스템 v1.0  
+OpenCV + MFC 기반 템플릿 매칭 프로토타입  
 
-기능 개요
-이미지 로드: 폴더 단위 템플릿/테스트 이미지 쌍 로드
-전처리: Grayscale → Gaussian Blur → CLAHE → Morphology Opening
-템플릿 매칭: 픽셀 차이 기반 결함 검출 + 빨간 바운딩 박스
-결함 카운트: 실시간 검출 개수 표시
-UI:  순차 버튼 + 상태 메시지
+기능 개요  
+이미지 로드: 폴더 단위 템플릿/테스트 이미지 쌍 로드  
+전처리: Grayscale → Gaussian Blur → CLAHE → Morphology Opening  
+템플릿 매칭: 픽셀 차이 기반 결함 검출 + 빨간 바운딩 박스  
+결함 카운트: 실시간 검출 개수 표시  
+UI:  순차 버튼 + 상태 메시지  
 
-기술 스택
-Frontend: MFC Dialog + Picture Control (C++)
+기술 스택  
+Frontend: MFC Dialog + Picture Control (C++)  
 Backend: OpenCV 4._ (C++17)
 전처리: CLAHE(1.5,8x8), Morphological Opening(3x3 Ellipse)
 매칭: absdiff + Threshold(30) + Contour Detection(area>90)
