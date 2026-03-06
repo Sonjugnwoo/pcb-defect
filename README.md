@@ -15,10 +15,6 @@ Backend: OpenCV 4._ (C++17)
 매칭: absdiff + Threshold(30) + Contour Detection(area>90)
 빌드: Visual Studio 2019+
 
-빠른 시작
-1. Visual Studio 2019+ 설치
-2. OpenCV 4.x 다운로드 (opencv4/opencv2 경로 설정)
-
 성능 
 결함 검출 파이프라인:
 absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox
