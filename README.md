@@ -10,29 +10,27 @@ UI:  순차 버튼 + 상태 메시지
 
 기술 스택  
 Frontend: MFC Dialog + Picture Control (C++)  
-Backend: OpenCV 4._ (C++17)
-전처리: CLAHE(1.5,8x8), Morphological Opening(3x3 Ellipse)
-매칭: absdiff + Threshold(30) + Contour Detection(area>90)
-빌드: Visual Studio 2019+
+Backend: OpenCV 4._ (C++17)  
+전처리: CLAHE(1.5,8x8), Morphological Opening(3x3 Ellipse)  
+매칭: absdiff + Threshold(30) + Contour Detection(area>90)  
+빌드: Visual Studio 2019+  
 
-성능 
-결함 검출 파이프라인:
-absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox
+성능  
+결함 검출 파이프라인:  
+absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox  
 
-전처리 효과:
-- Grayscale: 색상 변화 무시 
+전처리 효과:  
+- Grayscale: 색상 변화 무시  
 - CLAHE: 조명 불균일 보정 
-- Morphology: 노이즈 제거
+- Morphology: 노이즈 제거  
 
-현재 한계점
-매직넘버: threshold=30, area=120 하드코딩
-회전/크기 변화: 템플릿 매칭 한계
-배치 처리: 수동 1개씩 처리
+현재 한계점  
+매직넘버: threshold=30, area=120 하드코딩  
+회전/크기 변화: 템플릿 매칭 한계  
+배치 처리: 수동 1개씩 처리  
 
-
- 개발 로드맵
-
-v1.0 - 템플릿 매칭 프로토타입
-v2.0 - YOLOv3 통합 
-v3.0 - 실시간 카메라 연동
+개발 로드맵  
+v1.0 - 템플릿 매칭 프로토타입  
+v2.0 - YOLOv3 통합   
+v3.0 - 실시간 카메라 연동  
 
