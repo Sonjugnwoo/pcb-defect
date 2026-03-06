@@ -1,0 +1,19 @@
+# Visual Studio - 모든 임시파일
+.vs/
+.vs/**
+x64/
+Debug/
+Release/
+bin/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.pch
+*.ipch
+*.aps
+*.suo
+*.user
+ipch/
+*.cache
+*.VC.db
